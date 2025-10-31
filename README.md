@@ -32,6 +32,8 @@
 
 ## 🛠️ Installation
 
+- Open chrome and go to `chrome://flags/#prompt-api-for-gemini-nano` and `chrome://flags/#prompt-api-for-gemini-nano-multimodal-input`, enabling both flags.
+
 - Build the unpacked extension
 
   - Build from source: `npm install` and `npm run build` to generate the `dist` directory.
