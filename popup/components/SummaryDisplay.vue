@@ -81,7 +81,7 @@ const getPlainText = () => {
 const splitIntoSentences = (text) => {
   if (!text) return [];
   // 使用正则表达式分割句子：. ! ? 后跟空格或换行
-  return text.split(/([.!?]+[\s\n]*)/).filter(s => s.trim());
+  return text.split(/((?<=\D)[.!?]+[\s\n]*)/).filter(s => s.trim());
 };
 
 // 朗读句子
@@ -249,9 +249,9 @@ onMounted(async () => {
   }
 
   // 初始状态提示
-  if (!props.content && !props.loading) {
-    speakCue('Reading page...');
-  }
+  // if (!props.content && !props.loading) {
+  //   speakCue('Reading page...');
+  // }
 
   // 监听设置变化
   chrome.storage.local.onChanged.addListener((changes) => {
