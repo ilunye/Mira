@@ -1,0 +1,27 @@
+{
+  "name": "Summarization Example",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "background.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "@mozilla/readability": "0.5.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "dompurify": "3.1.7",
+    "marked": "14.1.4",
+    "vite": "^5.4.20",
+    "vite-plugin-static-copy": "^1.0.6",
+    "vue": "^3.5.22"
+  },
+  "dependencies": {
+    "@google/genai": "^1.25.0",
+    "@google/generative-ai": "^0.24.1"
+  }
+}
